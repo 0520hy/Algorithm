@@ -9,8 +9,7 @@ function solution(food) {
     }
     
      let reverse = answer.split("").reverse().join("");
-     answer += "0"
-     answer += reverse
+     answer = answer + "0" + reverse;
     
     return answer;
 }
