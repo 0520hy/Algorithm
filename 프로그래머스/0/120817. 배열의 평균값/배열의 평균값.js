@@ -1,10 +1,5 @@
 function solution(numbers) {
-    var answer = 0;
-    let sum = 0;
     
-    for(i = 0; i < numbers.length; i++){
-        sum += numbers[i];
-    }
-    answer = sum / numbers.length;
-    return answer;
+    return numbers.reduce((a,b)=> a+b) /numbers.length;
+    
 }
