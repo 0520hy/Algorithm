@@ -1,7 +1,4 @@
 function solution(array, height) {
-    var answer = [];
-    array.map((item) => {
-       if( item > height ) answer.push(item)
-    });
+    var answer = array.filter(item => item > height);
     return answer.length;
 }
