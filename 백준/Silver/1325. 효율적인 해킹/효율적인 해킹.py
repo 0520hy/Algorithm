@@ -16,6 +16,7 @@ for i in range(1, N+1):
     visited[i] = True
     
     cnt = 1
+    
     while queue:
         x = queue.popleft()
         for j in graph[x]:
