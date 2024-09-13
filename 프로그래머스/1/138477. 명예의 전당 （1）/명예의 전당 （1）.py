@@ -3,11 +3,9 @@ def solution(k, score):
     tmp = []
 
     for i in score:
-        if len(tmp) < k:
-            tmp.append(i)
-        elif min(tmp) < i:
+        tmp.append(i)
+        if(len(tmp) > k):
             tmp.remove(min(tmp))
-            tmp.append(i)
         answer.append(min(tmp))
     
     return answer
